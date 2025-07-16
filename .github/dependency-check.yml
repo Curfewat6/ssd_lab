@@ -1,7 +1,5 @@
 name: OWASP Dependency Check
 
-on: [push, pull_request]
-
 jobs:
   security-scan:
     runs-on: ubuntu-latest
