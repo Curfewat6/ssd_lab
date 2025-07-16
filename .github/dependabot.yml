@@ -1,5 +1,5 @@
 version: 2
-on: [push, pull_request]
+
 updates:
   - package-ecosystem: "npm" # or "maven", "gradle", "pip"
     directory: "/"
