@@ -2,6 +2,11 @@ name: ESLint Code Analysis
 
 on: [push, pull_request]
 
+permissions:            # <-- applies to every job
+  contents: read         # checkout still needs this
+  actions: read          # lets the action look up previous runs
+  security-events: write # allows SARIF uploads
+  
 jobs:
   eslint:
     runs-on: ubuntu-latest
